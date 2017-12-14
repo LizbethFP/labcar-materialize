@@ -5,72 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LabCar</title>
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/materialize/cssmaterialize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="assets/images/logoForma.png" alt="logo">
-        </nav>
-				<nav class="navbar navbar-default">
-						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#">Brand</a>
-							</div>
-					
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">One more separated link</a></li>
-										</ul>
-									</li>
-								</ul>
-								<form class="navbar-form navbar-left">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
-									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
-								</form>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>        
-    </header>
-    
+  <header>
+    <!-- <nav class="navbar navbar-default">
+			    <div class="container-fluid">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="script" src="vendors/bootstrap/js/bootstrap.js">
-    </script>
+				    <div class="navbar-header">
+					    <a class="navbar-brand" href="#"><img src="assets/images/logoForma.png" alt="logo"></a>
+				    </div>
+					  <ul class="nav navbar-nav navbar-right">
+						  <li><a href="travel">Viaja</a></li>
+              <li><a href="drive">Conduce</a></li>
+              <li><a href="">Inicia sesión</a></li>
+					  </ul>
+				  </div>
+		</nav> -->
+  </header>
+  <section id="travel" class="">
+    <div class="hero">
+      <!-- <img src="assets/images/taxi.jpg" alt="taxi"> -->
+      <div class="info-yellow">
+        <h2>Disfruta del viaje</h2>
+        <h2>Eres dueño de tu tiempo</h2>
+        <p>Viaja con <img src="assets/images/logoBlanco.png" alt="logo"></p>
+        <button type="button" name="button" class="text-uppercase">regístrate</button>
+        <hr>
+        <button type="button" name="button">Conviértete en un conductor</button>
+        <div class="reference-info-yellow">
+          <p>O bien</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="app" class="">
+    <div class="">
+      <!-- caja que solo se mostrará en la versión de computadora -->
+      <div class="app-info-and-photo-desktop">
+        <img src="assets/images/iPhone6Plus.png" alt="app-phone">
+        <article class="app-info">
+          <h3>Descarga la nueva app</h3>
+          <p>
+            La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.
+            Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.
+          </p>
+        </article>
+      </div>
+      <!-- caja que solo se mostrará en la versión móvil -->
+      <div class="app-info-and-photo-mobile">
+        <figure>
+          <figcaption>La nueva app</figcaption>
+          <img src="assets/images/iPhone6Plus.png" alt="app-phone">
+        </figure>
+        <p>Llega a tu destino aún más rápido.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="drive">
+    <!-- <img src="assets/images/conduce.jpg" alt="driver"> -->
+    <article class="drivers-info">
+      <h3>Conduce cuando quieras</h3>
+      <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+      <button type="button" name="button">Conviértete en conductor</button>
+    </article>
+  </section>
+  
+  <section id="fees" class="">
+    <div class="">
+      <div class="fees-info">
+        <h3>Tarifas</h3>
+        <p>Consulta las tarifas LabCar aquí</p>
+        <div class="first-input">
+          <img src="assets/images/shape.png" alt="circle">
+          <input type="text" name="" value="" placeholder="Insurgentes Centro, Cuauhtémoc, Ciudad de México, México">
+        </div>
+        <div class="second-input">
+          <img src="assets/images/shape2.png" alt="circle">
+          <input type="text" name="" value="" placeholder="Carolina, Ciudad de los Deportes, Ciudad de México, México">
+        </div>
+        <button type="button" name="button" class="text-capitalize">¡trazar ruta!</button>
+      </div>
+      <figure>
+        <img src="assets/images/navigation.png" alt="map">
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#"><img src="assets/images/logoBlanco.png" alt="logo"></a>
+    <hr>
+    <div class="social-network">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-linkedin"></i></a>
+      <a href=""><i class="fa fa-apple"></i></a>
+      <a href=""><i class="fa fa-play"></i></a>
+    </div>
+    <div class="first-column-list">
+      <ul>
+        <li><a href="#">Viaja</a></li>
+        <li><a href="#">Conduce</a></li>
+        <li><a href="#">Ciudades</a></li>
+        <li><a href="#">Ciudades</a></li>
+        <li><a href="#">Entregas</a></li>
+        <li><a href="#">¿Cómo funciona?</a></li>
+        <li><a href="#">Países</a></li>
+        <li><a href="#">Seguridad</a></li>
+      </ul>
+    </div>
+    <div class="second-column-list">
+      <ul>
+        <li><a href="#">Ciudades</a></li>
+        <li><a href="#">Nuestra historia</a></li>
+        <li><a href="#">API de LabCar</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Desarrolladores</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Laboratoria</a></li>
+        <li><a href="#">Coders</a></li>
+      </ul>
+    </div>
+    <div class="apps-market">
+      <img src="assets/images/appstore.png" alt="apple-store">
+      <img src="assets/images/enBadgeWebGeneric.png" alt="google-store">
+    </div>
+    <hr>
+    <p>&#169; 2017 LabCar technologies Inc.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="script" src="vendors/bootstrap/js/bootstrap.js">
+  </script>
 </body>
 </html>
